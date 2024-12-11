@@ -1,11 +1,16 @@
-body{
+body {
     background-color: $background;
     color: $body-text;
     font-size: 16px;
     font-family: $font-primary;
 }
 
-h1,h2,h3,h4,h5,h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: $titles;
 }
 
@@ -64,5 +69,103 @@ h1,h2,h3,h4,h5,h6 {
     background-color: $verification;
 }
 
+.btn {
+    display: inline-block;
+    border: 1px solid $stroke;
+    color: $titles;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 7px 48px 11px;
+    border-radius: 5px;
 
+    &.btn-primary {
+        background-color: $accent;
+        border-color: $accent;
+        color: $system;
 
+        &:hover,
+        &:active {
+            border-color: $accent-hover;
+            background-color: $accent-hover;
+        }
+
+        &:active,
+        &:focus {
+            color: $titles;
+        }
+    }
+
+    &.btn-secondary {
+        background-color: transparent;
+        border-color: $stroke;
+        color: $titles;
+
+        &:hover {
+            border-color: $accent-hover;
+            background-color: $accent-hover;
+            color: $system;
+        }
+
+        &:active,
+        &:focus {
+            color: $titles;
+        }
+    }
+
+    &.btn-large {
+        border-radius: 8px;
+        padding: 25px 94px 28px;
+    }
+
+    &.btn-profile {
+        padding: 8px 8px;
+        border-radius: 8px;
+        width: 56px;
+        height: 56px;
+        position: relative;
+
+        &:hover {
+            border-color: $body-text;
+        }
+
+        &.verified,
+        &.not-verified {
+            &:before {
+                content: "";
+                position: absolute;
+                width: 12px;
+                height: 12px;
+                right: -6px;
+                top: -6px;
+                border-radius: 50%;
+                background-color: $accent;
+            }
+        }
+
+        &.not-verified {
+            &:before {
+                background-color: $errors;
+            }
+        }
+
+        svg {
+            width: 18px;
+            height: 16px;
+        }
+    }
+
+    &:focus-visible {
+        box-shadow: none;
+    }
+
+    &:not(.btn-check)+.btn:active {
+        color: $titles;
+        border-color: $accent-hover;
+        background-color: $accent-hover;
+    }
+}
+
+::selection {
+    color: $system;
+    background-color: $accent;
+}
