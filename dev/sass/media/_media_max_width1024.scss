@@ -56,6 +56,16 @@
                 color: $accent;
             }
         }
+
+        .navbar-collapse {
+            .status {
+                display: block;
+            }
+        }
+
+        .navbar-nav_main-navigation {
+            margin: 90px 0 128px;
+        }
     }
 
     .navbar-toggler {
@@ -111,7 +121,7 @@
     .navbar-nav {
         .dropdown-menu {
             border: none;
-          
+
 
             .dropdown-item {
                 padding: 12px 25px;
@@ -142,6 +152,13 @@
             left: 0;
             right: 0;
             border: 1px solid #242424;
+        }
+
+        .status {
+            position: absolute;
+            left: 20px;
+            top: 110px;
+            display: none;
         }
     }
 
