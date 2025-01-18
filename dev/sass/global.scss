@@ -15,6 +15,7 @@ h4,
 h5,
 h6 {
     color: $titles;
+    font-weight: 600;
 }
 
 h1 {
@@ -55,6 +56,10 @@ a {
 
         text-decoration: underline;
     }
+}
+
+section {
+    padding-bottom:  $section-padding;
 }
 
 .container {
