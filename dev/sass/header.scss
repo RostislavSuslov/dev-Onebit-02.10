@@ -1,6 +1,8 @@
 header {
     background-color: #373737;
     transition: .3s;
+    z-index: 10;
+    
     &.fixed {
         backdrop-filter: blur(24.5px);
         background: transparent;
