@@ -59,7 +59,7 @@ a {
 }
 
 section {
-    padding-bottom:  $section-padding;
+    padding-bottom: $section-padding;
 }
 
 .container {
@@ -265,6 +265,23 @@ section {
 }
 
 
+.template-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    margin-bottom: 100px;
+    h2 {
+        margin-bottom: 0;
+    }
+
+    h5 {
+        color: $body-text;
+        font-weight: 400;
+    }
+}
+
 
 /*scroll*/
 
@@ -312,7 +329,7 @@ section {
 /* FireFox */
 .scroll {
     scrollbar-color: $accent #242424;
-    padding-right:8px;
+    padding-right: 8px;
     overflow: auto;
 }
 
