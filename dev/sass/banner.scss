@@ -1,8 +1,19 @@
 .banner {
     padding-top: 40px;
-
+    overflow: hidden;
+    padding-bottom: 250px + 150px;
+    
     >.container {
         display: flex;
+        justify-content: space-between;
+    }
+
+    + section {
+        margin-top: -150px;
+        transition: 1s;
+    }
+    .banner-col {
+        position: relative;
     }
 
     &-text {
@@ -53,6 +64,16 @@
             }
         }
     }
+
+    .form-exchange {
+        border: none;
+    }
 }
 
- 
+.form-light {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}

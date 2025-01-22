@@ -3,7 +3,8 @@
     padding: 40px;
     border: 1px solid $stroke;
     max-width: 540px;
-
+    position: relative;
+    background: $background;
     .give {
         margin-bottom: 30px;
     }
