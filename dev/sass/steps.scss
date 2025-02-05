@@ -9,6 +9,11 @@
     background: $accent;
     border-radius: 15px;
     padding: 50px;
+    transition: .3S;
+    &:hover {
+        background-color: $accent-hover;
+        text-decoration: none;
+    }
 }
 
 .step-number {
