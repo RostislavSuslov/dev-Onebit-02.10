@@ -5,13 +5,9 @@ $(document).ready(function() {
     });
 })
 
-
- 
-
 // const btnHistoryBack = document.querySelector('#history-back');
 // const backHistory =()=>  window.history.back();
 // btnHistoryBack.addEventListener('click', backHistory)
-
 
 window.addEventListener("scroll", function() {
     const header = document.querySelector("header");
@@ -24,19 +20,16 @@ window.addEventListener("scroll", function() {
 
 
 const swiper = new Swiper('.swiper', {
-    // Optional parameters
     loop: true,
-    // slidesPerView: 2,
 
     pagination: {
         el: '.swiper-pagination',
         clickable: true,
     },
-  
-    // Navigation arrows
+
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
     },
-   
-  });
+
+});
