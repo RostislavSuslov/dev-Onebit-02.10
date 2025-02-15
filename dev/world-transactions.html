@@ -1,0 +1,76 @@
+@@include('templates/head.html')
+@@include('templates/header.html')
+<main class="wrapper page-exchange-application">
+    <h1 class="page-title"><span>ооформлення заявки</span><span>міжнародного переказу</span></h1>
+    <form class="exchange-row">
+        <div class="input-column">
+            <fieldset>
+                <legend>інформація відправника </legend>
+                <div class="input-box">
+                    <label for="from-name">ім’я</label>
+                    <input id="from-name">
+                </div>
+                <div class="input-box">
+                    <label for="from-last-name">прізвище</label>
+                    <input id="from-last-name">
+                </div>
+                <div class="input-box">
+                    <input id="from-tel" type="tel" placeholder="+38(000)-00-00-000">
+                </div>
+                <div class="input-box">
+                    <select name="from-country" id="from-country" class="select-xl">
+                        <option value="disable" disable>країна</option>
+                        <option value="ua">Україна</option>
+                        <option value="pl">Польша</option>
+                        <option value="ch">Чехія</option>
+                    </select>
+                </div>
+                <div class="input-box">
+                    <label for="from-city">місто відправника</label>
+                    <input id="from-city">
+                </div>
+                <div class="input-box">
+                    <label for="from-telegram">нікнейм Telegram</label>
+                    <input id="from-telegram">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>інформація відправника </legend>
+                <div class="input-box">
+                    <label for="to-name">ім’я</label>
+                    <input id="to-name">
+                </div>
+                <div class="input-box">
+                    <label for="to-last-name">прізвище</label>
+                    <input id="to-last-name">
+                </div>
+                <div class="input-box">
+                    <input id="to-tel" type="tel" placeholder="+38(000)-00-00-000">
+                </div>
+                <div class="input-box">
+                    <select name="to-country" id="to-country" class="select-xl">
+                        <option value="disable" disable>країна</option>
+                        <option value="ua">Україна</option>
+                        <option value="pl">Польша</option>
+                        <option value="ch">Чехія</option>
+                    </select>
+                </div>
+                <div class="input-box">
+                    <label for="to-city">місто відправника</label>
+                    <input id="to-city">
+                </div>
+                <div class="input-box">
+                    <label for="to-telegram">нікнейм Telegram</label>
+                    <input id="to-telegram">
+                </div>
+            </fieldset>
+      
+        </div>
+        @@include('templates/form-exchange_case2.html')
+        <!-- <div class="submit-column">
+        </div> -->
+    </form>
+</main>
+@@include('templates/footer.html')
+@@include('templates/footer-assets.html')
+ 

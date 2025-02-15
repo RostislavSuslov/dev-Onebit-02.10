@@ -30,10 +30,10 @@
     }
 }
 
-
 .accordion-button {
     color: $titles;
     min-height: 162px;
+    justify-content: space-between;
 
     &:not(.collapsed) {
         background-color: transparent;
@@ -48,8 +48,8 @@
     &:after {
         background-image: url("data:image/svg+xml,%3Csvg width='27' height='27' viewBox='0 0 27 27' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='12' width='3' height='27' fill='%23B1FF5C'/%3E%3Crect x='27' y='12' width='3' height='27' transform='rotate(90 27 12)' fill='%23B1FF5C'/%3E%3C/svg%3E%0A");
     }
-    
-    &:not(.collapsed)::after{
+
+    &:not(.collapsed)::after {
         background-image: url("data:image/svg+xml,%3Csvg width='27' height='27' viewBox='0 0 27 27' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='27' y='12' width='3' height='27' transform='rotate(90 27 12)' fill='%23B1FF5C'/%3E%3C/svg%3E%0A");
     }
 }
@@ -58,5 +58,3 @@
     font-size: 20px;
     padding-bottom: 72px;
 }
-
- 

@@ -1,0 +1,104 @@
+@@include('templates/head.html')
+@@include('templates/header.html')
+<main class="wrapper page-exchange-application">
+    <h1 class="page-title"><span>оформлення заявки</span> <span>на обмін криптовалюти</span></h1>
+    <form class="exchange-row">
+        <div class="input-column">
+            <fieldset>
+                <legend>контактна інформація</legend>
+                <div class="input-box">
+                    <label for="name">ім’я</label>
+                    <input id="name">
+                </div>
+                <div class="input-box">
+                    <label for="last-name">прізвище</label>
+                    <input id="last-name">
+                </div>
+                <div class="input-box">
+                    <label for="middle-name">по батькові</label>
+                    <input id="middle-name">
+                </div>
+                <div class="input-box">
+                    <input id="tel" type="tel" placeholder="+38(000)-00-00-000">
+                </div>
+                <div class="input-box">
+                    <label for="email">по батькові</label>
+                    <input id="email">
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>локація</legend>
+                <div class="input-box">
+                  
+                    <select name="country" id="country" class="select-xl">
+                        <option value="disable" disable>країна</option>
+                        <option value="ua">Україна</option>
+                        <option value="pl">Польша</option>
+                        <option value="ch">Чехія</option>
+                    </select>
+                </div>
+                <div class="input-box">
+                    <label for="city">місто</label>
+                    
+                    <select name="country" id="country" class="select-xl">
+                        <option value="disable" disable>місто</option>
+                        <option value="Київ">Київ</option>
+                        <option value="Харків">Харків</option>
+                        <option value="Львів">Львів</option>
+                        <option value="Одеса">Одеса</option>
+                        <option value="bila-tserkva">bila-tserkva</option>
+                        <option value="cherkasy">cherkasy</option>
+                        <option value="chernigiv">chernigiv</option>
+                        <option value="chernivtsi">chernivtsi</option>
+                        <option value="dnipro">dnipro</option>
+                        <option value="druzhkivka">druzhkivka</option>
+                        <option value="irshava">irshava</option>
+                        <option value="ivano-frankivsk">ivano-frankivsk</option>
+                        <option value="kamenets-podols">kamenets-podolskiy</option>
+                        <option value="khmelnitskii">khmelnitskii</option>
+                        <option value="khust">khust</option>
+                        <option value="konstantynivka">konstantynivka</option>
+                        <option value="kovel">kovel</option>
+                        <option value="kramatorsk">kramatorsk</option>
+                        <option value="kremenchuk">kremenchuk</option>
+                        <option value="kriviy-rig">kriviy-rig</option>
+                        <option value="kropivnitskii">kropivnitskii</option>
+                        <option value="lutsk">lutsk</option>
+                        <option value="mukachevo">mukachevo</option>
+                        <option value="mykolaiv">mykolaiv</option>
+                        <option value="pokrovsk">pokrovsk</option>
+                        <option value="poltava">poltava</option>
+                        <option value="rakhiv">rakhiv</option>
+                        <option value="rivne">rivne</option>
+                        <option value="sumy">sumy</option>
+                        <option value="ternopil">ternopil</option>
+                        <option value="tyachiv">tyachiv</option>
+                        <option value="ujgorod">ujgorod</option>
+                        <option value="uman">uman</option>
+                        <option value="vinnitsa">vinnitsa</option>
+                        <option value="vinogradovo">vinogradovo</option>
+                        <option value="zaporozhie">zaporozhie</option>
+                        <option value="zhitomir">zhitomir</option>
+                    </select>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>додаткова інформація</legend>
+                <div class="input-box">
+                    <label for="telegram">telegram</label>
+                    <input id="telegram" >
+                </div>
+                <div class="input-box">
+                    <label for="purse">гаманець</label>
+                    <input id="purse">
+                </div>
+            </fieldset>
+        </div>
+        @@include('templates/form-exchange_case2.html')
+        <!-- <div class="submit-column">
+        </div> -->
+    </form>
+</main>
+@@include('templates/footer.html')
+@@include('templates/footer-assets.html')
+ 

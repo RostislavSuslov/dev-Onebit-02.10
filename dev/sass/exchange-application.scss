@@ -1,0 +1,37 @@
+.exchange-row {
+    @extend .container;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-bottom: $section-padding;
+    display: flex;
+    align-items: flex-start;
+    gap: 36px;
+    .option {
+        img {
+            display: none;
+        }
+
+        &[data-value="disable"] {
+            display: none;
+        }
+    }
+    .form-exchange {
+        min-width: 540px;
+        margin-left: auto;
+        align-items: flex-start;
+    }
+}
+
+.input-column {
+    max-width: 705px;
+    width: 100%;
+}
+
+.select-xl {
+    border-radius: 8px;
+    font-size: 20px;
+    padding: 10px 30px 16px;
+    height: 85px;
+}
